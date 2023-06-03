@@ -14,12 +14,14 @@ const App = () => {
     setAnimals([...animals, getRandomAnimal()]);
   }
 
+  const renderedAnimals = animals.map((animal, index) => {
+    return <AnimalShow key={ index } type={animal} />
+  });
+
   return (
     <div>
       <button onClick={ handleClick }>Add Animal</button>
-      { animals && 
-          animals.map((animal, index) => <AnimalShow key={ index } type={animal} />)
-      }
+      { renderedAnimals }
     </div>
   );
 }
