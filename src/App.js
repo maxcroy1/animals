@@ -18,7 +18,7 @@ const App = () => {
     <div>
       <button onClick={ handleClick }>Add Animal</button>
       { animals && 
-          animals.map((animal, index) => <AnimalShow key={ index }>{ animal }</AnimalShow>)
+          animals.map((animal, index) => <AnimalShow key={ index } type={animal} />)
       }
     </div>
   );

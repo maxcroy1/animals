@@ -1,8 +1,7 @@
-const AnimalShow = ({ animal }) => {
+const AnimalShow = ({ type }) => {
   return (
     <div>
-      <h1>Animal Show</h1>
-      <p>{animal}</p>
+      <p>{type}</p>
     </div>
   );
 }
