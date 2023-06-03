@@ -1,7 +1,11 @@
 const App = () => {
+  const handleClick = () => {
+    console.log("Button was clicked!");
+  }
+
   return (
     <div>
-      <h1>Hello, world!</h1>
+      <button onClick={handleClick}>Add Animal</button>
     </div>
   );
 }
